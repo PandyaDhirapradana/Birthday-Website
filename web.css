@@ -1,0 +1,632 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffd1d1;
+    background:
+        conic-gradient(#ffd1d1 25%,#0000 0) 0 0/calc(2*32px) calc(32px/9.5),
+        conic-gradient(#ffd1d1 25%,#0000 0) 0 0/calc(32px/9.5) calc(2*32px),
+        repeating-conic-gradient(#0000 0 25%,#ffd1d1 0 50%) 
+        32px 0 /calc(2*32px) calc(2*32px),
+        radial-gradient(50% 50%,#ff9061 98%,#ffd1d1) 
+        0 0/32px 32px;
+}
+
+.size{
+    width: 90%;
+    margin: auto;
+    margin-top: 65px;
+    background-color: #ffdf88;
+    border-radius: 30px;
+}
+
+.size p{
+    padding: 35px;
+    font-size: 25px;
+}
+
+.style{
+    width: 94%;
+    margin: auto;
+    background-color: white;
+    border-left: 4px solid black;
+}
+
+.background1, .background2, .background3, .background4, .background5{
+    width: 94%;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.shape{
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.shape span{
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.caption{
+    margin-top: 20px;
+    text-align: center;
+    font-family: georgia;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* -- Welcome Page -- */
+
+/* - Background - */
+.welcome-background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:
+        radial-gradient(at 80% 80%,#ff4747 25.4%,#0000 26%),
+        radial-gradient(at 20% 80%,#ff4747 25.4%,#0000 26%),
+        conic-gradient(from -45deg at 50% 41%,#ff4747 90deg,#ffa1a1 0) 
+        25px 0;
+        background-size: 50px 50px;
+}
+
+.container{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(255, 197, 111, 0.363);
+    border: 5px solid white;
+    border-radius: 45px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    
+    -webkit-box-shadow:0px 0px 100px 10px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 100px 10px rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 100px 10px rgba(255,255,255,0.75);
+
+}
+
+h1{
+    margin: auto;
+    margin-top: 32px;
+    width: 80%;
+    text-align: center;
+    font-size: 60px;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    color: white;
+}
+
+.welcome{
+    margin-top: 30px;
+    margin-left: 270px;
+    width: 250px;
+    height: 80px;
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    background-size: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: 5px solid white;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 500ms ease;
+    box-shadow: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
+    background: linear-gradient(90deg, #efd5ff 0%, #ffa1a1 100%);
+    background-size: 200%;
+    animation-name: flow;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.welcome:active{
+    box-shadow: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
+    background: linear-gradient(90deg, #e96ce9 0%, #f86868 100%);
+    background-position: 100%;
+}
+
+@keyframes flow {
+    0% {
+background-position: 0% 50%;
+}
+100% {
+background-position: 100%;
+}
+}
+
+/* -- Content Page -- */
+
+/* - Navbar Section - */
+#navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: #ff8585;
+}
+
+#navbar span{
+    color: white;
+    font-size: 30px;
+    font-family: Courier;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* - Hero Section - */
+#hero{
+    background: url("WhatsApp\ Image\ 2024-09-19\ at\ 10.38.57_bb87f832.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+}
+
+#hero marquee{
+    cursor: default;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 150px;
+    text-align: center;
+}
+
+/* - Content Section - */
+
+/* Greeting */
+.greet{
+    height: 525px;
+}
+
+/* Good Words */
+.gwords{
+    height: 980px;
+}
+
+.gwords p{
+    padding-bottom: 10px;
+}
+
+.gwords .words p{
+    padding-bottom: 30px;
+    font-style: italic;
+}
+
+/* Music */
+.music{
+    height: 1875px;
+}
+
+.music p{
+    padding-bottom: 5px;
+}
+
+.music .spo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Lyrics */
+
+.lyrics{
+    height: 1200px;
+}
+
+.lyrics p{
+    padding-bottom: 10px;
+}
+
+.lyrics .text p{
+    padding-bottom: 30px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.background1{
+    background-color: rgb(146, 13, 163);
+    background: 
+        linear-gradient(135deg,#0000 20.5%,#920da3 0 29.5%,#0000 0) 0 16px,
+        linear-gradient( 45deg,#0000 8%,#920da3 0 17%, #0000 0 58%) 32px 0,
+        linear-gradient(135deg,#0000 8%,#920da3 0 17%, #0000 0 58%,#920da3 0 67%,#0000 0),        
+        linear-gradient( 45deg,#0000 8%,#920da3 0 17%, #0000 0 58%,#920da3 0 67%,#0000 0 83%,#920da3 0 92%,#0000 0),
+        #b629b6;
+    background-size: 64px 64px;
+
+}
+
+.background2{
+    background-color: rgb(143, 177, 143);
+    background:
+        conic-gradient(from -45deg at calc(100%/3) calc(100%/3), #8fb18f 90deg, #0000 0),
+        conic-gradient(from -135deg at calc(100%/3) calc(2*100%/3), #8fb18f 90deg, #50ac7d 0 135deg, #0000 0),
+        conic-gradient(from 135deg at calc(2*100%/3) calc(2*100%/3), #8fb18f 90deg, #50ac7d 0 135deg, #0000 0),
+        conic-gradient(from 45deg at calc(2*100%/3) calc(100%/3), #8fb18f 90deg, #50ac7d 0 135deg, #0000 0,#8fb18f 0 225deg,#50ac7d 0);
+    background-size: 64px 64px;
+}
+
+.background3{
+    background-color: rgb(196, 196, 241);
+    background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #c4c4f1 32px), repeating-linear-gradient(#8fb4d1, #646eb3);
+    background-color: #c4c4f1;
+}
+
+.background4{
+    background-color: rgb(255, 32, 32);
+    background:
+        radial-gradient(64px at 100% 0, #ff2020 6.25%, #ff4a4a 6.3% 18.75%, #ff2020 18.8% 31.25%, #ff4a4a 31.3% 43.75%, #ff2020 43.8% 56.25%, #ff4a4a 56.3% 68.75%, #0000 0),
+        radial-gradient(64px at 0 0, #ff2020 6.25%, #ff4a4a 6.3% 18.75%, #ff2020 18.8% 31.25%, #ff4a4a 31.3% 43.75%, #ff2020 43.8% 56.25%, #ff4a4a 56.3% 68.75%, #0000 0),
+        radial-gradient(64px at 0 100%, #ff2020 6.25%, #ff4a4a 6.3% 18.75%, #ff2020 18.8% 31.25%, #ff4a4a 31.3% 43.75%, #ff2020 43.8% 56.25%, #ff4a4a 56.3% 68.75%, #0000 0),
+        radial-gradient(64px at 100% 100%, #ff2020 6.25%, #ff4a4a 6.3% 18.75%, #ff2020 18.8% 31.25%, #ff4a4a 31.3% 43.75%, #ff2020 43.8% 56.25%, #ff4a4a 56.3% 68.75%, #0000 0) #ff2020;
+    background-size: 64px 64px;
+    background-color: #ff2020;
+}
+
+.background5{
+    background-color: rgb(150, 150, 150);
+    background: 
+        radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#757575 54% 57%,#0000 59%) 0 calc(128px/2),
+        radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#757575 54% 57%,#0000 59%) calc(128px/2) 0,
+        radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#757575 54% 57%,#0000 59%),
+        radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#757575 54% 57%,#0000 59%),
+        #969696;
+    background-size: calc(128px/4.667) 128px,128px calc(128px/4.667);
+}
+
+/* Ranking */
+.rank{
+    height: 615px;
+}
+
+.img{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.border{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border: 20px solid white;
+    border-bottom: 80px solid white;
+    border-radius: 25px;
+}
+
+.img1{
+    background-image: url("Foto\ dari\ EwingSD\ \(8\)");
+    background-size: cover;
+    width: 100%;
+    height: 54.5vh;
+}
+
+.img2{
+    background-image: url("Foto\ dari\ Pandya\ Dhirapradana\ \(1\)");
+    background-size: cover;
+    width: 100%;
+    height: 54.5vh;
+}
+
+.img3{
+    background-image: url("20240304_065949.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 54.5vh;
+}
+
+.number1{
+    background-color: rgb(255, 230, 0);
+    border: 10px solid rgb(255, 182, 47);
+}
+
+.number2{
+    background-color: rgb(202, 202, 202);
+    border: 10px solid rgb(177, 177, 177);
+}
+
+.number3{
+    background-color: rgb(235, 153, 45);
+    border: 10px solid rgb(199, 129, 0);
+}
+
+/* Pretty */
+.pretty{
+    height: 390px;
+}
+
+.pretty p{
+    padding-bottom: 10px;
+}
+
+.pwetty{
+    width: 94%;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.pwetty p{
+    padding-bottom: 40px;
+}
+
+/* Flower */
+.flower{
+    height: 215px;
+}
+
+.flower p{
+    padding-bottom: 5px;
+}
+
+.flo-btn{
+    margin-left: 500px;
+    width: 250px;
+    height: 80px;
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    background-size: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: 5px solid white;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 500ms ease;
+    box-shadow: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
+    background: linear-gradient(90deg, #efd5ff 0%, #ffa1a1 100%);
+    background-size: 200%;
+    animation-name: flow;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+
+.flo-btn:active{
+    box-shadow: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1), 0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
+    background: linear-gradient(90deg, #e96ce9 0%, #f86868 100%);
+    background-position: 100%;
+}
+
+/* Closing */
+#closing{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 65px;
+    background-color: #ff8585;
+    border-top: 10px solid rgb(255, 55, 55);
+    border-bottom: 10px solid rgb(255, 55, 55);
+}
+
+#closing span{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+    font-size: 30px;
+    font-family: Courier;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* -- Moble View -- */
+
+@media (max-width: 477px){
+.size{
+    width: 80%;
+    margin-top: 45px;
+}
+
+.size p{
+    padding: 35px;
+    font-size: 23px;
+}
+
+.style{
+    width: 80%;
+    margin-bottom: 35px;
+}
+
+.background1, .background2, .background3, .background4, .background5{
+    width: 81%;
+}
+
+.shape{
+    width: 50px;
+    height: 50px;
+    top: -40px;
+    left: -30px;
+}
+
+/* -- Welcome Page -- */
+
+/* - Background - */
+.welcome-background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 75%;
+    top: 50%;
+    left: 50%;
+}
+
+h1{
+    font-size: 36px;
+}
+
+.welcome{
+    margin-left: 40px;
+}
+
+/* -- Content Page -- */
+
+/* - Navbar Section - */
+
+#navbar span{
+    font-size: 21px;
+    margin-top: 18px;
+}
+
+/* - Hero Section - */
+#hero{ 
+    height: 27vh;
+}
+
+#hero marquee{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+/* - Content Section - */
+
+/* Greeting */
+.greet{
+    height: 1340px;
+}
+
+/* Good Words */
+.gwords{
+    height: 2175px;
+}
+
+.gwords p{
+    padding-bottom: 5px;
+}
+
+/* Music */
+.music{
+    height: 2010px;
+}
+
+.music p{
+    padding-bottom: 5px;
+}
+
+.music .spo{
+    gap: 35px;
+}
+
+.music .spo iframe{
+    width: 81%;
+}
+
+/* Lyrics */
+
+.lyrics{
+    height: 1750px;
+}
+
+.lyrics p{
+    padding-bottom: 5px;
+}
+
+.lyrics .text{
+    margin-bottom: 35px;
+}
+
+.lyrics .text p{
+    font-size: 23px;
+}
+
+/* Ranking */
+.rank{
+    height: 2150px;
+}
+
+.rank p{
+    padding-bottom: 30px;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.border{
+    height: 510px;
+}
+
+.img1{
+    height: 55vh;
+}
+
+.img2{
+    height: 55vh;
+}
+
+.img3{
+    height: 55vh;
+}
+
+/* Pretty */
+.pretty{
+    height: 1030px;
+}
+
+.pretty p{
+    padding-bottom: 10px;
+}
+
+.pwetty{
+    width: 81%;
+}
+
+.pwetty p{
+    padding-bottom: 40px;
+}
+
+/* Flower */
+.flower{
+    height: 210px;
+}
+
+.flower p{
+    padding-bottom: 5px;
+}
+
+.flo-btn{
+    margin-left: 50px;
+}
+
+/* Closing */
+#closing{
+    height: 293px;
+    margin-top: 45px;
+}
+
+#closing span{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 23px;
+}
+}
